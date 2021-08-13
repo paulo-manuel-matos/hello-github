@@ -39,14 +39,14 @@ jobs:
           #name: Run tests
           # This assumes pytest is installed via the install-package step above
           #command: pytest
-      - run:
-          name: Install dependencies
-          command: 
-            python3 -m venv /home/circleci/venv
+      #- run:
+          #name: Install dependencies
+          #command: 
+            #python3 -m venv /home/circleci/venv
             #. /home/circleci/venv/bin/activate
-            make install
+            #make install
       - run:
           name: Run lint
           command: 
-            /home/circleci/venv/bin/activate
+            #/home/circleci/venv/bin/activate
             make lint
