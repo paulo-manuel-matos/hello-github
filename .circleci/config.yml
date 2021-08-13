@@ -43,7 +43,7 @@ jobs:
           name: Install dependencies
           command: 
             python3 -m venv /home/circleci/venv
-            . /home/circleci/venv/bin/activate
+            #. /home/circleci/venv/bin/activate
             make install
       - run:
           name: Run lint
