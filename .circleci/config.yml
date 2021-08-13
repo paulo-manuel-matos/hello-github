@@ -43,5 +43,5 @@ jobs:
           name: Run lint
           # This assumes pytest is installed via the install-package step above
           command: 
-            . /home/paulo_manuel_matos/.hello-github/bin/activate
+            . venv/bin/activate
             make lint
